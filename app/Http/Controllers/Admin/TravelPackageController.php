@@ -94,7 +94,7 @@ class TravelPackageController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(TravelPackage $request, $id)
+    public function update(TravelPackageRequest $request, $id)
     {
         $item = TravelPackage::findOrFail($id);
 
