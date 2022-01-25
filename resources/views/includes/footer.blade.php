@@ -74,7 +74,7 @@
   <div class="container-fluid">
     <div class="row border-top justify-content-center align-items-center pt-4">
       <div class="col-auto text-gray-500 font-weight-light">
-          {{ date('Y') }} Copyright <a href="{{ url('https://timmixcode.my.id') }}" target="__blank">MixCode</a> - {{ config('app.name') }} - All right reserved - Tangerang - Indonesia
+          {{ date('Y') }} Copyright <a href="{{ url('https://timmixcode.my.id') }}" target="__blank">MixCode</a> - {{ config('app.name') }} - All right reserved - Jogjakarta - Jawa Tengah
       </div>
     </div>
   </div>

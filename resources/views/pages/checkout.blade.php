@@ -1,5 +1,4 @@
-@extends('layouts.checkout')
-@section('title','Checkout')
+@extends('layouts.checkout', ['title' => $item->travel_package->package_type])
     
 @section('content')
 <!-- detaiils -->
