@@ -9,7 +9,7 @@
         <ul class="navbar-nav mr-auto d-none d-sm-block d-lg-block">
             <li>
                 <span class="text-muted">
-                    | &nbsp; Dapatkan pengalaman terbaru bersama kami
+                    | &nbsp; Get the latest experience with us
                 </span>
             </li>
         </ul>

@@ -53,16 +53,16 @@
             <h5>GET CONNECTED</h5>
             <ul class="list-unstyled">
               <li>
-                <a href="#">Tangerang-Banten</a>
+                <a href="#">Jogjakarta - Jawa Tengah</a>
               </li>
               <li>
                 <a href="#">Indonesia</a>
               </li>
               <li>
-                <a href="#">0821-222-1123</a>
+                <a href="#">021-2020-2022</a>
               </li>
               <li>
-                <a href="#">helpopentrip@gmail.com</a>
+                <a href="#">help@dnmerapi.timmixcode.my.id</a>
               </li>
             </ul>
           </div>

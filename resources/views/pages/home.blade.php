@@ -45,8 +45,8 @@
                     </div>
     
                     <div class="col-3 col-md-2 stats-detail ">
-                        <h2>3K</h2>
-                        <p>Hotels</p>
+                        <h2>80</h2>
+                        <p>Jeep</p>
                     </div>
                     <div class="col-3 col-md-2 stats-detail ">
                         <h2>14</h2>

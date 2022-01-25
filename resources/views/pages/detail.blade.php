@@ -136,7 +136,7 @@
                                 @endif
                             @endauth
                             @guest
-                                <a href="{{ route('login') }}" class="btn btn-block btn-join-now mt-3 py-2">login / register dulu yuk</a>
+                                <a href="{{ route('login') }}" class="btn btn-block btn-join-now mt-3 py-2">login / register</a>
                             @endguest
                         </div>
                     </div>

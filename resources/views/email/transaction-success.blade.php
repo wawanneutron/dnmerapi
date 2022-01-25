@@ -113,7 +113,7 @@
                         <tbody>
                           <tr>
                             <td style="width:180px;">
-                            <img alt="" height="auto" src="{{ url('frontend/images/logo_email.png') }}" style="border:none;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="180" />
+                            <img alt="" height="auto" src="{{ url('frontend/images/trip.png') }}" style="border:none;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="180" />
                             </td>
                           </tr>
                         </tbody>

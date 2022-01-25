@@ -32,7 +32,7 @@
               </div>
               @endif
 
-              <h1 style="font-size: 23px">Siapa yang akan kamu ajak pergi?</h1>
+              <h1 style="font-size: 23px">Who will you go with?</h1>
                 <p>You are choice package<b> {{ ($item->travel_package->package_type) }}</b>
                     <b>Explor Merapi Area Vulcano</b></p>
 
@@ -77,17 +77,17 @@
 
                 <!-- add member -->
         <div class="member mt-5">
-          <h3>Ayo ajak temanmu untuk bergabung</h3>
+          <h3>Come on, invite your friends to join</h3>
             <!-- form input add member -->
             <form action="{{ route('serch-freand', $item->id) }}" method="POST">
               @csrf
                 <div class="row text-center">
                   <div class="col-md-8">
                     <label for="username" class="sr-only">Name</label>
-                    <input type="text" name="username" class="form-control mb-2 mt-2" id="username"placeholder="Cari berdasarkan username / userid" required>
+                    <input type="text" name="username" class="form-control mb-2 mt-2" id="username"placeholder="search by username / userid" required>
                   </div>
                   <div class="col-md-4">
-                    <button type="submit" class="btn btn-add-now mb-2 px-5 mt-2">Cari Teman Saya</button>
+                    <button type="submit" class="btn btn-add-now mb-2 px-5 mt-2">Find My Friend</button>
                   </div>
                 </div>
             </form>
@@ -156,8 +156,8 @@
                       <!-- payments -->
                       <h3>Payment Intructions</h3>
                       <p class="payment-instructions">
-                            You will be redirected to another page to pay using GO-PAY or another method</p>
-                    <img src="{{ url('frontend/images/gopay.png') }}" class="w-50" alt="">
+                            You will be redirected to another page to pay using your preferred payment method</p>
+                    <img src="{{ url('frontend/images/payment.png') }}" class="w-100" alt="">
                   </div>
                   @if ($cek_member > $cek_kuota)
                     <!-- CTE -->

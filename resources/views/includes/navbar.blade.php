@@ -1,7 +1,7 @@
   <!-- Navbar -->
   <div class="container">
     <nav class="row navbar navbar-expand-lg  navbar-light bg-white" id="home">
-    <a href="{{ route('home') }}" class="navbar-logo-pealip">
+    <a href="{{ route('home') }}" class="navbar-logo-pealip" title="{{ config('app.name') }}">
         <img src="{{ asset('frontend/images/trip.png') }}" alt="logo">
     </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb"
@@ -15,7 +15,7 @@
                     <a class="nav-link active" href="#home">Home </a>
                 </li>
                 <li class="nav-item mx-md-2 ">
-                    <a class="nav-link" href="#popular">Paket Travel</a>
+                    <a class="nav-link" href="#popular">Package Travel</a>
                 </li>
                 <li class="nav-item mx-md-2">
                     <a class="nav-link" href="#testimonialHeading">Testimonial</a>
@@ -61,39 +61,39 @@
             @endif
             
             @guest
-                <!-- mobile Button Masuk -->
+                <!-- mobile Button Login -->
                 <form action="#" class="form-inline d-sm-block d-lg-none">
                     @csrf
                     <div class="container col-10">
                     <button class="btn btn-block btn-login-mobile my-2 my-sm-0" type="button" onclick="event.preventDefault(); location.href='{{ url('login') }}';">
-                            Masuk
+                            Login
                         </button>
                     </div>
                 </form>
-                <!-- desktop Button Masuk -->
+                <!-- desktop Button Login -->
                 <form action="#" class="form-inline my-2 my-lg-0 d-none d-lg-block">
                     @csrf
                 <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4" type="button" onclick="event.preventDefault(); location.href='{{ url('login') }}';">
-                        Masuk
+                        Login
                     </button>
                 </form>
             @endguest
 
             @auth
-                <!-- mobile Button Masuk -->
+                <!-- mobile Button Login -->
                 <form action="{{ url('logout') }}" class="form-inline d-sm-block d-lg-none" method="POST">
                     @csrf
                     <div class="container col-10">
                     <button class="btn btn-block btn-login-mobile my-2 my-sm-0" type="submit">
-                            Keluar
+                            Logout
                         </button>
                     </div>
                 </form>
-                <!-- desktop Button Masuk -->
+                <!-- desktop Button Login -->
                 <form action="{{ url('logout') }}" class="form-inline my-2 my-lg-0 d-none d-lg-block" method="POST">
                     @csrf
                 <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4" type="submit">
-                        Keluar
+                        Logout
                     </button>
                 </form> 
             @endauth

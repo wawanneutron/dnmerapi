@@ -32,7 +32,7 @@ class TransactionSuccess extends Mailable
     public function build()
     {
         return $this
-            ->from('support@opentrip.timmixcode.my.id', 'DN Merapi')
+            ->from('help@dnmerapi.timmixcode.my.id', 'DNMerapi')
             ->subject('E-Ticket Open Trip')
             ->view('email.transaction-success');
     }
