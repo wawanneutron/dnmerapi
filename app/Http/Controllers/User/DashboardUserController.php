@@ -23,7 +23,7 @@ class DashboardUserController extends Controller
     {
         $historytTransaction = Transaction::latest()
             ->whereUsersId(Auth::user()->id)
-            ->get();
+            ->paginate(10);
         return view('pages.user.transaction.index', [
             'histories' => $historytTransaction
         ]);

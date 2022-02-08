@@ -20,7 +20,7 @@ class TransactionController extends Controller
     {
         $items = Transaction::with([
             'details', 'travel_package', 'user'
-        ])->latest()->get();
+        ])->latest()->paginate(10);
 
         return view('pages.admin.transaction.index', [
             'items' => $items
