@@ -28,7 +28,7 @@
             <tbody>
             @forelse ($items as $index => $item)
               <tr>
-                <td>{{ $index +1 }}</td>
+                <td>{{ ++$index + ($items->currentPage() - 1) * $items->perPage() }}</td>
                 <td> {{ $item->kd_transaction }} </td>
                 <td> {{ $item->travel_package->package_type }} </td>
                 <td> {{ $item->created_at->format('F d, Y - H:i') }} </td>
@@ -36,10 +36,10 @@
                 <td> {{ moneyFormat($item->transaction_total) }} </td>
                 <td> {{ $item->transaction_status }} </td>
                 <td>
-                  <a href="{{ route('admin.transaction.show', $item->id) }}" class="btn btn-primary">
+                  <a href="{{ route('admin.transaction.show', $item->id) }}" class="btn btn-sm btn-primary">
                     <i class="fa fa-eye"></i>
                   </a>
-                  <button onclick="Delete(this.id)" id="{{ $item->id }}" class="btn btn-danger">
+                  <button onclick="Delete(this.id)" id="{{ $item->id }}" class="btn btn-sm btn-danger">
                     <i class="fa fa-trash"></i>
                   </button>
                 </td>
