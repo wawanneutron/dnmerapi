@@ -26,14 +26,14 @@
         <hr class="sidebar-divider">
          <!-- Heading -->
          <div class="sidebar-heading">
-           Transaksi
+           Transactions
          </div>
          
          {{-- Transaksi --}}
          <li class="nav-item">
              <a class="nav-link" href="{{ route('user.dashboard-history') }}">
                <i class="fas fa-fw fa-dollar-sign"></i>
-               <span>History Transaksi</span></a>
+               <span>Histories Transaction</span></a>
          </li>
 
 

@@ -16,10 +16,10 @@
             <thead>
               <tr>
                 <th>No</th>
-                <th>Kode Transaksi</th>
-                <th>Tipe Paket</th>
+                <th>Code Transaction</th>
+                <th>Package Type</th>
                 <th>Member / User</th>
-                <th>Harga Open Trip</th>
+                <th>Price</th>
                 <th>Status</th>
                 <th>Action</th>
               </tr>
@@ -54,6 +54,7 @@
             </tbody>
           </table>
         </div>
+        <div class="float-right">{{ $histories->links() }}</div>
     </div>
     </div>
     

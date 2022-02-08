@@ -25,39 +25,39 @@
       <div class="card-body">
         <table class="table-bordered table-responsive-sm">
             <tr>
-               <th>Kode Transaksi</th>
+               <th>Code Transaction</th>
                <td>{{ $item->kd_transaction }}</td>
             </tr>
             <tr>
-              <th>Tipe Paket</th>
+              <th>Package Type</th>
               <td>{{ $item->travel_package->package_type }}</td>
             </tr>
             <tr>
-              <th>Pembeli</th>
+              <th>User Checkout</th>
               <td>{{ $item->user->name }}</td>
             </tr>
             <tr>
-              <th>Total Transaksi</th>
+              <th>Total Transaction</th>
               <td>{{ moneyFormat($item->transaction_total) }}</td>
             </tr>
             <tr>
-              <th>Status Transaksi</th>
+              <th>Status Transaction</th>
               <td>{{ $item->transaction_status }}</td>
             </tr>
             <tr>
-                <th>Pembelian</th>
+                <th>Details</th>
                 <td>
                     <table class="table table-bordered">
                         <tr>
                           @if ($item->transaction_status == 'IN_CART' || $item->transaction_status == 'PENDING')
                             <th>User ID</th>
-                            <th>Nama</th>
-                            <th>Email</th>
+                            <th>Member Name</th>
+                            <th>Email Member</th>
                           @else
                             <th>User ID</th>
-                            <th>No Tiket</th>
-                            <th>Nama</th>
-                            <th>Email</th>
+                            <th>No E-Ticket</th>
+                            <th>Member Name</th>
+                            <th>Email Member</th>
                           @endif
                           </tr>
                         @foreach ($item->details as $detail)

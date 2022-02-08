@@ -19,10 +19,10 @@
         </div>
         
         {{-- Dashboard --}}
-        <li class="nav-item">
+        <li class="nav-item {{ Request::is('admin/dashboard') ? 'active' : '' }}">
             <a class="nav-link" href="{{ route('admin.dashboard') }}">
               <i class="fas fa-fw fa-tachometer-alt"></i>
-              <span>Analitik</span></a>
+              <span>Analytics</span></a>
         </li>
 
 
@@ -35,10 +35,10 @@
         </div>
         
         {{-- paket travel --}}
-        <li class="nav-item">
+        <li class="nav-item {{ Request::is('admin/dashboard/travel-package*') ? 'active' : '' }}">
             <a class="nav-link" href="{{ route('admin.travel-package.index') }}">
               <i class="fas fa-fw fa-luggage-cart"></i>
-              <span>Paket Travel</span></a>
+              <span>Travel Package</span></a>
         </li>
                  
                 
@@ -47,14 +47,14 @@
   
         <!-- Heading -->
         <div class="sidebar-heading">
-          Galeri
+          Galery
         </div>
         
         {{-- galeri travel --}}
-        <li class="nav-item">
+        <li class="nav-item {{ Request::is('admin/dashboard/gallery*') ? 'active' : '' }}">
         <a class="nav-link" href="{{ route('admin.gallery.index') }}">
               <i class="fas fa-fw fa-images"></i>
-              <span>Galeri Travel</span></a>
+              <span>Galleries Travel</span></a>
         </li>
 
          <!-- Divider -->
@@ -62,21 +62,21 @@
   
          <!-- Heading -->
          <div class="sidebar-heading">
-           Transaksi
+           Transaction
          </div>
          
          {{-- Transaksi --}}
-         <li class="nav-item">
+         <li class="nav-item {{ Request::is('admin/dashboard/transaction*') ? 'active' : '' }}">
              <a class="nav-link" href="{{ route('admin.transaction.index') }}">
                <i class="fas fa-fw fa-dollar-sign"></i>
-               <span>Transaksi</span></a>
+               <span>Transactions</span></a>
          </li>
 
         <!-- Divider -->
         <hr class="sidebar-divider">
 
         {{-- Transaksi --}}
-         <li class="nav-item">
+         <li class="nav-item {{ Request::is('admin/dashboard/data-customers') ? 'active' : '' }}">
              <a class="nav-link" href="{{ route('admin.customers') }}">
                <i class="fas fa-users"></i>
                <span>Data Customers</span></a>
@@ -86,10 +86,10 @@
         <hr class="sidebar-divider">
 
         {{-- Transaksi --}}
-         <li class="nav-item">
-             <a class="nav-link" href="{{ route('admin.report') }}">
+         <li class="nav-item {{ Request::is('admin/dashboard/report-periodic') ? 'active' : '' }}">
+             <a class="nav-link" href="{{ route('admin.report-periodic') }}">
                <i class="fas fa-file-alt"></i>
-               <span>Laporan</span></a>
+               <span>Report</span></a>
          </li>
 
         <!-- Divider -->

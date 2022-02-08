@@ -6,9 +6,9 @@
 
   <!-- Page Heading -->
   <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">Paket Travel</h1>
+    <h1 class="h3 mb-0 text-gray-800">Travel Package</h1>
     <a href="{{ route('admin.travel-package.create') }}" class="btn btn-sm btn-primary shadow-sm">
-      <i class="fas fa-plus fa-sm text-white-50"></i>Tambah Paket travel
+      <i class="fas fa-plus fa-sm text-white-50 mr-2"></i>Add Travel Package
     </a>
   </div>
   <div class="row">
@@ -19,11 +19,11 @@
           <thead>
             <tr>
               <th>No</th>
-              <th>Jenis Paket</th>
-              <th>Kuota</th>
-              <th>Harga</th>
-              <th>Tipe</th>
-              <th>Durasi Jeep</th>
+              <th>Package Type</th>
+              <th>Quota</th>
+              <th>Price</th>
+              <th>Trip Type</th>
+              <th>Duration Jeep</th>
               <th>Action</th>
             </tr>
           </thead>

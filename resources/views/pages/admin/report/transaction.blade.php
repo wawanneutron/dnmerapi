@@ -7,18 +7,18 @@
     <!-- General CSS Files -->
     <link rel="stylesheet" href="{{ public_path('backend/css/sb-admin-2.min.css') }}" >
 
-    <title>Laporan Transaksi</title>
+    <title>Report Transaction</title>
 </head>
 <body>
-    <div class="text-center mb-5">Data Laporan Transaksi </div>
+    <div class="text-center mb-5">Data Report Transaction </div>
     <div class="table-responsive" style="font-size: 13px">
         <table class="table table-hover table-bordered table-md">
             <tr class=" table-active">
                 <th>No</th>
-                <th>Kode Transaksi</th>
-                <th>Member</th>
-                <th>Total Transaksi</th>
-                <th>Tipe Paket</th>
+                <th>Code Transaction</th>
+                <th>Members</th>
+                <th>Total Transaction</th>
+                <th>Type Package</th>
             </tr>
             @forelse ($datas as $index => $item)
                  <tr>
@@ -35,18 +35,18 @@
                 <button class="close" data-dismiss="alert">
                     <span>&times;</span>
                 </button>
-                Data belum tersedia
+                Data not available
             </div>
         </div>
         @endforelse
         <div class="footer mt-5 text-right">
-            <div class="text-header">Mengetahui</div>
+            <div class="text-header">Yours sincerely</div>
                 <img src="{{ public_path('/storage/ttd1.png') }}" width="90" alt="">
             <div class="text-header ">Admin</div>
         </div>
         <div class="">
             <span style=" font-size: 12px;">
-            dicetak tanggal
+            printed date
             {{ Carbon\Carbon::now()->toDateTimeString() }}
         </span>
         </div>

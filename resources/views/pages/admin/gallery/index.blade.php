@@ -18,16 +18,16 @@
         <table class="table table-bordered table-responsive-sm" width="100%" cellspacing="0">
           <thead>
             <tr>
-              <th>ID</th>
-              <th>Jenis Paket</th>
-              <th>Gambar</th>
+              <th>NO</th>
+              <th>Package Type</th>
+              <th>Image</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody>
-            @forelse ($items as $item)
+            @forelse ($items as $index => $item)
             <tr>
-              <td> {{ $item->id }} </td>
+              <td> {{ $index +1 }} </td>
               <td> {{ $item->travel_package->package_type }} </td>
               <td>
               <img src="{{ Storage::url($item->image) }}" alt="" style="width: 150px" class="img-thumbnail">

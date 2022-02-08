@@ -17,7 +17,7 @@
 
   <div class="card shadow">
     <div class="card-header"> 
-      <h1 class="h4 mb-0 text-gray-800">Edit Paket Travel</h1>
+      <h1 class="h4 mb-0 text-gray-800">Edit Travel Package</h1>
     </div>
     <div class="card-body">
       <form action="{{ route('admin.travel-package.update', $item->id) }}" method="POST">
@@ -26,25 +26,25 @@
         <div class="row">
           <div class="col-md-4">
             <div class="form-group">
-              <label for="title">Jenis Paket</label>
+              <label for="title">Package Type</label>
               <input type="text" name="package_type" id="title" class="form-control" value="{{ $item->package_type }}">
             </div>
           </div>
           <div class="col-md-4">
             <div class="form-group">
-              <label for="location">Lama Waktu Jeep</label>
+              <label for="location">Jeep Duration Time</label>
               <input type="number" class="form-control" name="duration_jeep"  value="{{ old('duration_jeep') ?? $item->duration_jeep }}">
             </div>
           </div>
           <div class="col-md-3">
             <div class="form-group">
-              <label for="quota">Kuota</label>
+              <label for="quota">Quota</label>
               <input type="number" class="form-control" name="quota" placeholder="quota" value="{{ old('quota') ?? $item->quota }}">
             </div>
           </div>
           <div class="col-md-3 mt-2">
             <div class="form-group">
-              <label for="type">Jenis</label>
+              <label for="type">Type Trip</label>
               <select name="type" class="form-control" id="type">
                 @switch($item->type)
                     @case("Open Trip")
@@ -70,13 +70,13 @@
           </div>
           <div class="col-md-3 mt-2">
             <div class="form-group">
-              <label for="type">Harga</label>
+              <label for="type">Price</label>
               <input type="number" class="form-control" name="price" placeholder="Price" value="{{ old('price') ?? $item->price }}">
             </div>
           </div>
           <div class="col-md-3 mt-2">
             <div class="form-group">
-              <label for="culture">Include Penginapan</label> <br>
+              <label for="culture">Include Lodging House</label> <br>
               <div class="form-check form-check-inline mt-2 mr-5">
                 <input class="form-check-input" type="radio" name="lodging_house" id="penginapanTrue" value="true" {{ $item->lodging_house == 1 ? 'checked' : '' }}>
                 <label class="form-check-label" for="penginapanTrue">Ya</label>
@@ -89,7 +89,7 @@
           </div>
           <div class="col-md-3 mt-2">
            <div class="form-group">
-              <label for="canton">Include Makan 3x Sehari</label> <br>
+              <label for="canton">Includes Meals</label> <br>
               <div class="form-check form-check-inline mt-2 mr-5">
                 <input class="form-check-input" type="radio" name="eat" id="makanTrue" value="true" {{ $item->eat == 1 ? 'checked' : '' }}>
                 <label class="form-check-label" for="makanTrue">Ya</label>
@@ -102,19 +102,19 @@
           </div>
           <div class="col-12 mt-2">
             <div class="form-group">
-              <label>Include</label>
+              <label>Includes</label>
               <textarea name="includes" id="editorInclude">{{ old('includes') ?? $item->includes }}</textarea>
             </div>
           </div>
           <div class="col-12 mt-2">
             <div class="form-group">
-              <label>Masukan Informasi Apapun</label>
+              <label>Enter Any Information</label>
               <textarea name="about" id="editorAbout">{{ old('about') ?? $item->about }}</textarea>
             </div>
           </div>
         </div>
           <button class="btn btn-primary btn-block" type="submit">
-            Simpan
+            UPDATE
           </button>
       </form>
     </div>
