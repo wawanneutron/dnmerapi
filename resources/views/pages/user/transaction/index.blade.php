@@ -18,6 +18,7 @@
                 <th>No</th>
                 <th>Code Transaction</th>
                 <th>Package Type</th>
+                <th>Date Transaction</th>
                 <th>Member / User</th>
                 <th>Price</th>
                 <th>Status</th>
@@ -30,6 +31,7 @@
                 <td>{{ $index +1 }}</td>
                 <td> {{ $item->kd_transaction }} </td>
                 <td> {{ $item->travel_package->package_type }} </td>
+                <td> {{ $item->created_at->format('F d, Y - H:i') }} </td>
                 <td> {{ $item->user->name }} </td>
                 <td> {{ moneyFormat($item->transaction_total )}} </td>
                 <td> {{ $item->transaction_status }} </td>

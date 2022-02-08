@@ -16,6 +16,7 @@
             <tr class=" table-active">
                 <th>No</th>
                 <th>Code Transaction</th>
+                <th>Date Transaction</th>
                 <th>Members</th>
                 <th>Total Transaction</th>
                 <th>Type Package</th>
@@ -24,6 +25,7 @@
                  <tr>
                     <td>{{ $index +1 }}</td>
                     <td>{{ $item->kd_transaction }}</td>
+                    <td> {{ $item->created_at->format('F d, Y - H:i') }} </td>
                     <td>{{ $item->user->name }}</td>
                     <td>{{ moneyFormat($item->transaction_total) }}</td>
                     <td>{{ $item->travel_package->package_type  }}</td>
