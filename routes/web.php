@@ -57,7 +57,8 @@ Route::middleware(['auth'])->group(function () {
             Route::resource('gallery', 'GalleryController');
             Route::resource('transaction', 'TransactionController');
             Route::get('data-customers', 'DataCustomers@index')->name('customers');
-            Route::get('report-transaction', 'ReportController@transaksi')->name('report');
+            Route::get('report-periodic', 'ReportController@index')->name('report-periodic');
+            Route::post('report-transaction-periodic', 'ReportController@reportTransaction')->name('print-report');
         });
 
     // user dashboard
